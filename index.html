@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickMercado</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ClickMercado</h1>
+        <div class="barra-busqueda">
+            <input type="text" id="busqueda" placeholder="Buscar productos...">
+            <select id="filtrar">
+                <option value="todos">Todos</option>
+                <option value="accesorio_auto">accesorio auto</option>
+                <option value="decoracion">decoración</option>
+                <option value="electrodomestico">electrodoméstico</option>
+                <option value="fitness">fitness</option>
+                <option value="gaming">gaming</option>
+                <option value="herramienta">herramienta</option>
+                <option value="juguete">juguete</option>
+                <option value="libro">libro</option>
+                <option value="ropa">ropa</option>
+                <option value="tecnologia">tecnología</option>
+            </select>
+            <select id="ordenar">
+                <option value="meno-mayor">Precio: Menor a Mayor</option>
+                <option value="mayor-menor">Precio: Mayor a Menor</option>
+            </select>
+            <button class="boton-carrito" onclick="window.location.href='carrito.html'">🛒 Carrito (<span id="contador-carrito">0</span>)</button>
+        </div>
+    </header>
+    <main>
+        <section class="lista-productos">
+        </section>
+    </main>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
